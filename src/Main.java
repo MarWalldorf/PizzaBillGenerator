@@ -3,6 +3,7 @@ public class Main {
         Pizza basePizza = new Pizza(true);
         basePizza.addSpecialToppings();
         basePizza.addExtraCheese();
+        basePizza.addExtraHam();
         basePizza.ChickenSandwich();
         basePizza.CheeseandHamSandwich();
         basePizza.PastramiSandwich();
