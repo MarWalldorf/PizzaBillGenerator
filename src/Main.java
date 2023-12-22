@@ -6,6 +6,7 @@ public class Main {
         basePizza.addExtraProsciutto();
         basePizza.addExtraPepperoni();
         basePizza.addExtraChicken();
+        basePizza.addExtraMushrooms();
         basePizza.addExtraBeef();
         basePizza.addExtraCorn();
         basePizza.addExtraOnion();
