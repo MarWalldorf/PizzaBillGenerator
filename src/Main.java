@@ -1,7 +1,6 @@
 public class Main {
     public static void main(String[] args) {
         Pizza basePizza = new Pizza(true);
-        basePizza.addSpecialToppings();
         basePizza.addExtraCheese();
         basePizza.addExtraHam();
         basePizza.addExtraPepperoni();
@@ -14,6 +13,9 @@ public class Main {
         basePizza.addExtraRedPepper();
         basePizza.addExtraGreenPepper();
         basePizza.addExtraYellowPepper();
+        basePizza.addExtraGreenOlives();
+        basePizza.addExtraBlackOlives();
+        basePizza.addSpecialToppings();
         basePizza.ChickenSandwich();
         basePizza.CheeseandHamSandwich();
         basePizza.PastramiSandwich();
