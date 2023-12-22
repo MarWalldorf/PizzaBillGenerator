@@ -18,7 +18,7 @@ public class Main {
         basePizza.addExtraGreenOlives();
         basePizza.addExtraBlackOlives();
         basePizza.addSpecialToppings();
-        basePizza.ChickenSandwich();
+        basePizza.ChickenSandwichWithMayonnaise();
         basePizza.CheeseandHamSandwich();
         basePizza.PastramiSandwich();
         basePizza.VegetarianSandwich();
