@@ -6,6 +6,8 @@ public class Pizza {
    private int extraHamPrice = 100;
    private int extraPepperoniPrice = 150;
    private int extraChickenPrice = 100;
+   private int extraCornPrice = 100;
+   private int extraOnionPrice = 100;
    private int SpecialToppingsPrice = 150;
    private int backPackPrice = 20;
    private int Chickensandwich = 50;
@@ -19,6 +21,8 @@ public class Pizza {
    private boolean isExtraHamAdded = false;
    private boolean isExtraPepperoniAdded = false;
    private boolean isExtraChickenAdded = false;
+   private boolean isExtraCornAdded = false;
+   private boolean isExtraOnionAdded = false;
    private boolean isSpecialToppingsAdded = false;
    private boolean isChickenSandwich = false;
    private boolean isCheeseandHamSandwich = false;
@@ -54,6 +58,16 @@ public class Pizza {
    public void addExtraChicken(){
       isExtraChickenAdded = true;
       this.price +=extraChickenPrice;
+   }
+
+   public void addExtraCorn(){
+      isExtraCornAdded = true;
+      this.price +=extraCornPrice;
+   }
+
+   public void addExtraOnion(){
+      isExtraOnionAdded= true;
+      this.price +=extraOnionPrice;
    }
 
    public void addSpecialToppings(){
@@ -99,7 +113,10 @@ public class Pizza {
          bill += "Extra pepperoni added: "+extraPepperoniPrice + "\n";
       }
       if(isExtraChickenAdded){
-         bill+= "Extra Chicken added: "+extraChickenPrice + "\n";
+         bill += "Extra Chicken added: "+extraChickenPrice + "\n";
+      }
+      if(isExtraCornAdded){
+         bill += "Extra Corn added: "+extraCornPrice + "\n";
       }
       if(isSpecialToppingsAdded){
          bill += "Special Toppings added: "+SpecialToppingsPrice + "\n";
