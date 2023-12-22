@@ -6,6 +6,7 @@ public class Main {
         basePizza.ChickenSandwich();
         basePizza.CheeseandHamSandwich();
         basePizza.PastramiSandwich();
+        basePizza.VegetarianSandwich();
         basePizza.takeAway();
         basePizza.getBill();
 
