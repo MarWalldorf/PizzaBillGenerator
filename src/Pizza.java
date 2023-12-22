@@ -113,13 +113,16 @@ public class Pizza {
          bill += "Extra pepperoni added: "+extraPepperoniPrice + "\n";
       }
       if(isExtraChickenAdded){
-         bill += "Extra Chicken added: "+extraChickenPrice + "\n";
+         bill += "Extra chicken added: "+extraChickenPrice + "\n";
       }
       if(isExtraCornAdded){
-         bill += "Extra Corn added: "+extraCornPrice + "\n";
+         bill += "Extra corn added: "+extraCornPrice + "\n";
+      }
+      if(isExtraOnionAdded){
+         bill += "Extra onion added: "+extraOnionPrice + "\n";
       }
       if(isSpecialToppingsAdded){
-         bill += "Special Toppings added: "+SpecialToppingsPrice + "\n";
+         bill += "Special toppings added: "+SpecialToppingsPrice + "\n";
       }
       if(isChickenSandwich){
          bill += "ChickenSandwich added: "+Chickensandwich + "\n";
