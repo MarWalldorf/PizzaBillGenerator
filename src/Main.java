@@ -6,12 +6,14 @@ public class Main {
         basePizza.addExtraHam();
         basePizza.addExtraPepperoni();
         basePizza.addExtraChicken();
+        basePizza.addExtraBeef();
         basePizza.addExtraCorn();
         basePizza.addExtraOnion();
         basePizza.addExtraTomatoes();
         basePizza.addExtraCucumber();
         basePizza.addExtraRedPepper();
-        basePizza.addExtraBeef();
+        basePizza.addExtraGreenPepper();
+        basePizza.addExtraYellowPepper();
         basePizza.ChickenSandwich();
         basePizza.CheeseandHamSandwich();
         basePizza.PastramiSandwich();

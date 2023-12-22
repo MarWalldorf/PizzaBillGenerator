@@ -12,6 +12,8 @@ public class Pizza {
    private int extraTomatoesPrice = 100;
    private int extraCucumberPrice = 100;
    private int extraRedPepperPrice = 100;
+   private int extraGreenPepperPrice = 100;
+   private int extraYellowPepperPrice = 100;
    private int SpecialToppingsPrice = 150;
    private int backPackPrice = 20;
    private int Chickensandwich = 50;
@@ -31,6 +33,8 @@ public class Pizza {
    private boolean isExtraTomatoesAdded = false;
    private boolean isExtraCucumberAdded = false;
    private boolean isExtraRedPepperAdded = false;
+   private boolean isExtraGreenPepperAdded = false;
+   private boolean isExtraYellowPepperAdded = false;
    private boolean isSpecialToppingsAdded = false;
    private boolean isChickenSandwich = false;
    private boolean isCheeseandHamSandwich = false;
@@ -63,14 +67,14 @@ public class Pizza {
       this.price +=extraPepperoniPrice;
    }
 
-   public void addExtraBeef(){
-      isExtraBeefAdded = true;
-      this.price +=extraBeefPrice;
-   }
-
    public void addExtraChicken(){
       isExtraChickenAdded = true;
       this.price +=extraChickenPrice;
+   }
+
+   public void addExtraBeef(){
+      isExtraBeefAdded = true;
+      this.price +=extraBeefPrice;
    }
 
    public void addExtraCorn(){
@@ -96,6 +100,16 @@ public class Pizza {
    public void addExtraRedPepper(){
       isExtraRedPepperAdded = true;
       this.price +=extraRedPepperPrice;
+   }
+
+   public void addExtraGreenPepper(){
+      isExtraGreenPepperAdded = true;
+      this.price +=extraGreenPepperPrice;
+   }
+
+   public void addExtraYellowPepper(){
+      isExtraYellowPepperAdded = true;
+      this.price +=extraYellowPepperPrice;
    }
 
    public void addSpecialToppings(){
@@ -143,6 +157,9 @@ public class Pizza {
       if(isExtraChickenAdded){
          bill += "Extra chicken added: "+extraChickenPrice + "\n";
       }
+      if(isExtraBeefAdded){
+         bill += "Extra beef added: "+extraBeefPrice + "\n";
+      }
       if(isExtraCornAdded){
          bill += "Extra corn added: "+extraCornPrice + "\n";
       }
@@ -158,8 +175,11 @@ public class Pizza {
       if(isExtraRedPepperAdded){
          bill += "Extra red pepper added: "+extraRedPepperPrice + "\n";
       }
-      if(isExtraBeefAdded){
-         bill += "Extra beef added: "+extraBeefPrice + "\n";
+      if(isExtraGreenPepperAdded){
+         bill += "Extra green pepper added: "+extraGreenPepperPrice + "\n";
+      }
+      if(isExtraYellowPepperAdded){
+         bill += "Extra yellow pepper added: "+extraYellowPepperPrice + "\n";
       }
       if(isSpecialToppingsAdded){
          bill += "Special toppings added: "+SpecialToppingsPrice + "\n";
