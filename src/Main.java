@@ -11,6 +11,7 @@ public class Main {
         basePizza.addExtraTomatoes();
         basePizza.addExtraCucumber();
         basePizza.addExtraRedPepper();
+        basePizza.addExtraBeef();
         basePizza.ChickenSandwich();
         basePizza.CheeseandHamSandwich();
         basePizza.PastramiSandwich();
