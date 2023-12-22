@@ -7,6 +7,7 @@ public class Pizza {
    private int backPackPrice = 20;
    private int Chickensandwich = 50;
    private int CheeseandHamsandwich = 60;
+   private int Pastramisandwich = 80;
 
    private int basePizzaPrice;
 
@@ -14,6 +15,7 @@ public class Pizza {
    private boolean isSpecialToppingsAdded = false;
    private boolean isChickenSandwich = false;
    private boolean isCheeseandHamSandwich = false;
+   private boolean isPastramiSandwich = false;
    private boolean isOptedForTakeAway = false;
    public Pizza(boolean veg){
       this.veg = veg;
@@ -46,6 +48,11 @@ public class Pizza {
       this.price +=CheeseandHamsandwich;
    }
 
+   public void PastramiSandwich(){
+      isPastramiSandwich = true;
+      this.price +=Pastramisandwich;
+   }
+
    public void takeAway(){
       isOptedForTakeAway = true;
       this.price += backPackPrice;
@@ -65,6 +72,9 @@ public class Pizza {
       }
       if(isCheeseandHamSandwich){
          bill += "CheeseandHamSandwich added: "+CheeseandHamsandwich + "\n";
+      }
+      if(isPastramiSandwich){
+         bill += "PastramiSandwich added: "+Pastramisandwich + '\n';
       }
       if(isOptedForTakeAway){
          bill += "Take away: "+backPackPrice + "\n";
