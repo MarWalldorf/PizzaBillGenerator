@@ -3,6 +3,7 @@ public class Main {
         Pizza basePizza = new Pizza(true);
         basePizza.addExtraCheese();
         basePizza.addExtraHam();
+        basePizza.addExtraProsciutto();
         basePizza.addExtraPepperoni();
         basePizza.addExtraChicken();
         basePizza.addExtraBeef();
